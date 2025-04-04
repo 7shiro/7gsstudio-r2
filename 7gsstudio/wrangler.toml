@@ -1,0 +1,13 @@
+name = "hugo-on-r2"
+compatibility_date = "2025-03-31"
+main = "src/index.js"
+
+account_id = "1587b34ab0d77f578ae069b81a001bd3"
+
+[env.production]
+workers_dev = false
+
+[[r2_buckets]]
+binding = "BUCKET"         # JavaScript内で使うバインディング名
+bucket_name = "7gsstudio"  # R2のバケット名
+preview_bucket_name = "7gsstudio"
